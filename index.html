@@ -68,7 +68,7 @@
                 <p id="player-display" class="text-xs text-blue-200 hidden mt-1">Học sinh: -- | Lớp: --</p>
             </div>
             <div id="timer-box" class="hidden bg-white/20 backdrop-blur px-3 py-1 rounded-lg font-mono text-lg font-bold border border-white/30 whitespace-nowrap">
-                20:00
+                90:00
             </div>
         </div>
 
@@ -537,7 +537,7 @@
         let currentTest = { p1: [], p2: [], p3: [] };
         let userResults = { p1: {}, p2: {}, p3: {} };
         let timerInterval;
-        let timeLeft = 20 * 60; // 20 mins
+        let timeLeft = 90 * 60; // 90 mins
         let timeSpentSeconds = 0; // Track actual time spent
 
         // Random Selector
@@ -718,7 +718,7 @@
         // --- SCORING & RESULT ---
         function submitTest() {
             clearInterval(timerInterval);
-            timeSpentSeconds = (20 * 60) - timeLeft;
+            timeSpentSeconds = (90 * 60) - timeLeft;
             
             // Format time taken
             const min = Math.floor(timeSpentSeconds / 60);
@@ -881,4 +881,5 @@
         }
     </script>
 </body>
+
 </html>
